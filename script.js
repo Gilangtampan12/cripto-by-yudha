@@ -1,18 +1,24 @@
 const buySound = new Audio('buy.mp3');
 const sellSound = new Audio('sell.mp3');
 const priceContainer = document.getElementById('crypto-prices');
-const coins = ['bitcoin', 'ethereum', 'dogecoin', 'solana', 'binancecoin'];
+const coins = ['regallion','elitium','bitcoin', 'ethereum', 'dogecoin', 'solana', 'binancecoin','dollar', 'rupiahchains', 'veltrix', 'solvium'];
 
 function generateRandomPrice(min, max) {
   return (Math.random() * (max - min) + min).toFixed(2);
 }
 
 const priceRanges = {
-  bitcoin: { min: 25000, max: 35000 },
+  regallion: { min: 600000, max: 1000000},
+  elitium: { min: 200000, max: 500000},
+  solvium: { min: 60000, max: 100000 },
+  dollar: { min: 20000, max: 50000},
+  bitcoin: { min: 1000, max: 5000 },
   ethereum: { min: 1500, max: 2500 },
   dogecoin: { min: 50, max: 200 },
   solana: { min: 80, max: 120 },
-  binancecoin: { min: 250, max: 450 }
+  binancecoin: { min: 250, max: 450 }, 
+  veltrix: { min: 160, max: 240},
+  rupiahchains: { min: 1, max: 150}
 };
 
 const walletContainer = document.getElementById('wallet');
