@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CryptoPro | Pantau & Investasi Kripto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">CryptoPro</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#prices">Harga</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Kelola Investasi Kriptomu dengan Cerdas</h2>
+        <p>Platform all-in-one untuk cek harga, analisa, dan kelola aset digitalmu.</p>
+        <a href="#prices" class="cta-button">Lihat Harga Kripto</a>
+      </div>
+      <div class="hero-image">
+        <img src="cripto.jpg" alt="Crypto Illustration">
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="prices-section">
+    <div class="container">
+      <h3>Harga Kripto Saat Ini</h3>
+      <div class="price-cards" id="crypto-prices">
+        <!-- Diisi oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <div class="container">
+      <h3>Kenapa Pilih CryptoPro?</h3>
+      <div class="features-grid">
+        <div class="feature-box">
+          <h4>Real-Time Price</h4>
+          <p>Harga selalu diperbarui langsung dari pasar global.</p>
+        </div>
+        <div class="feature-box">
+          <h4>UI Profesional</h4>
+          <p>Tampilan modern dan mudah digunakan di semua perangkat.</p>
+        </div>
+        <div class="feature-box">
+          <h4>Portofolio Cerdas</h4>
+          <p>Kelola dan pantau portofolio secara otomatis dan aman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h3>Portofolio & Transaksi</h3>
+      <div id="auth-area">
+        <input type="text" id="username" placeholder="Nama Pengguna">
+        <button onclick="login()">Masuk</button>
+        <p id="greeting"></p>
+      </div>
+      <div id="wallet" style="display:none;">
+        <p>Saldo: <span id="saldo">0</span> USDT</p>
+        <div class="actions">
+          <button onclick="buyCoin('BTC')">Beli Bitcoin</button>
+          <button onclick="sellCoin('BTC')">Jual Bitcoin</button>
+          <button onclick="buyCoin('ETH')">Beli Ethereum</button>
+          <button onclick="sellCoin('ETH')">Jual Ethereum</button>
+        </div>
+        <div>
+          <h4>Portofolio:</h4>
+          <ul id="portfolio-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CryptoPro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
