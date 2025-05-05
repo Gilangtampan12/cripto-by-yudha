@@ -1,7 +1,7 @@
 const buySound = new Audio('buy.mp3');
 const sellSound = new Audio('sell.mp3');
 const priceContainer = document.getElementById('crypto-prices');
-const coins = ['regallion','elitium','bitcoin', 'ethereum', 'dogecoin', 'solana', 'binancecoin','dollar', 'rupiahchains', 'veltrix', 'solvium'];
+const coins = ['regallion','elitium','bitcoin', 'ethereum', 'dogecoin', 'solana', 'binancecoin','dollar', 'rupiahchains', 'veltrix', 'solvium','neightreign', 'erethium'];
 
 function generateRandomPrice(min, max) {
   return (Math.random() * (max - min) + min).toFixed(2);
@@ -12,6 +12,8 @@ const priceRanges = {
   elitium: { min: 200000, max: 500000},
   solvium: { min: 60000, max: 100000 },
   dollar: { min: 20000, max: 50000},
+  neightreign: {min: 15000, max: 20000},
+  erethium: { min: 10000, max: 20000},
   bitcoin: { min: 1000, max: 5000 },
   ethereum: { min: 1500, max: 2500 },
   dogecoin: { min: 50, max: 200 },
